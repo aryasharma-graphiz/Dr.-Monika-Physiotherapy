@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Monika's Physiotherapy - Your Local Clinic</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif;scroll-behavior: smooth; }
+        .blob-bg { 
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FCE7F3' d='M44.7,-76.4C58.9,-69.2,71.8,-59.1,81.1,-46.1C90.4,-33.1,96.3,-16.6,94.9,-0.8C93.5,15,84.9,30,74.7,42.8C64.5,55.6,52.8,66.2,39.3,73.8C25.8,81.3,10.6,85.6,-4.1,82.4C-18.7,79.2,-32.8,68.4,-44.7,58.4C-56.7,48.3,-66.4,38.9,-75.4,27.1C-84.4,15.2,-92.8,0.8,-92,-13.4C-91.2,-27.6,-81.1,-41.6,-68.9,-51.7C-56.6,-61.8,-42.2,-68,-28.4,-72C-14.5,-75.9,-1.2,-77.7,12.5,-75.5C26.1,-73.4,40.1,-67.2,44.7,-76.4Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: 800px;
+        }
+        .bounce-hover:hover { transform: translateY(-5px); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#db2777', // pink-600
+                        light: '#fdf2f8', // pink-50
+                        accent: '#f472b6', // pink-400
+                        dark: '#4a044e', // fuchsia-900
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Emergency / Quick Contact Bar -->
+    <div class="bg-primary text-white text-center py-2 text-sm font-medium">
+        <i class="fa-solid fa-heart-pulse mr-2"></i> Welcoming New Patients in Thane | Book Your Consultation Today: <a href="tel:7096706997" class="underline underline-offset-2">7096706997</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-pink-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <img src="logo 2.PNG" alt="Dr. Monika's Physiotherapy Logo" class="h-12 w-auto object-contain">
+                    <div class="ml-3 hidden sm:block">
+                        <span class="block font-bold text-xl text-dark leading-tight">Dr. Monika's Physiotherapy</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-primary transition font-medium">Welcome</a>
+                    <a href="#services" class="text-gray-600 hover:text-primary transition font-medium">How We Help</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition font-medium">About Us</a>
+                    <a href="#reviews" class="text-gray-600 hover:text-primary transition font-medium">Happy Patients</a>
+                </div>
+                <div>
+                    <a href="#contact" class="bg-primary text-white px-6 py-2.5 rounded-full font-bold shadow-md shadow-pink-200 hover:bg-pink-700 hover:shadow-lg transition bounce-hover hidden sm:inline-block">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-16 sm:py-24 blob-bg relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0 relative z-10">
+                    <span class="text-primary font-bold tracking-wider text-sm mb-3 block uppercase bg-pink-100 inline-block px-4 py-1 rounded-full">★ Top Rated in Thane</span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-dark leading-tight mb-6 mt-4">
+                        Your Local Partner in <span class="text-primary relative inline-block">Pain Relief
+                            <svg class="absolute w-full h-3 -bottom-1 left-0 text-pink-200 -z-10" viewBox="0 0 100 20" preserveAspectRatio="none"><path d="M0,10 C30,20 70,0 100,10 L100,20 L0,20 Z" fill="currentColor"></path></svg>
+                        </span> & Wellness
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
+                        Compassionate, personalized physiotherapy designed to get you back to doing what you love. We treat every patient like family at our J K Gram clinic.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:7096706997" class="bg-primary text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-pink-200 hover:bg-pink-700 transition bounce-hover text-center">
+                            Call to Book: 7096706997
+                        </a>
+                        <a href="#services" class="bg-white text-dark border-2 border-primary px-8 py-4 rounded-full font-bold hover:bg-pink-50 transition bounce-hover text-center">
+                            Explore Services
+                        </a>
+                    </div>
+                    
+                    <div class="mt-10 flex items-center space-x-4">
+                        <div class="flex -space-x-3">
+                            <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://source.unsplash.com/random/100x100/?woman,smile" alt="Patient">
+                            <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://source.unsplash.com/random/100x100/?man,smile" alt="Patient">
+                            <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://source.unsplash.com/random/100x100/?person,smile" alt="Patient">
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-light flex items-center justify-center text-primary font-bold text-xs">+1k</div>
+                        </div>
+                        <p class="text-sm font-medium text-gray-600">Loved by 1000+ local patients</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-pink-300 to-transparent rounded-[2rem] transform translate-x-4 translate-y-4 -z-10"></div>
+                    <img src="image 1.PNG" alt="Friendly physiotherapy session" class="w-full h-auto object-cover rounded-[2rem] shadow-xl border-8 border-white">
+                    <div class="absolute -left-8 top-12 bg-white p-4 rounded-2xl shadow-xl bounce-hover hidden md:block border border-pink-100">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-light p-3 rounded-xl text-primary"><i class="fa-solid fa-hands-holding-child text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-dark">Gentle Care</h4>
+                                <p class="text-xs text-gray-500">For all ages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-12 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-xl shadow-pink-100/50 -mt-24 relative z-20">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="h-16 w-16 mx-auto bg-pink-50 text-primary rounded-full flex items-center justify-center mb-4 text-3xl">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <h3 class="font-bold text-dark mb-1">Experienced</h3>
+                        <p class="text-sm text-gray-500">Specialist care</p>
+                    </div>
+                    <div>
+                        <div class="h-16 w-16 mx-auto bg-pink-50 text-primary rounded-full flex items-center justify-center mb-4 text-3xl">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 class="font-bold text-dark mb-1">Compassionate</h3>
+                        <p class="text-sm text-gray-500">We treat you like family</p>
+                    </div>
+                    <div>
+                        <div class="h-16 w-16 mx-auto bg-pink-50 text-primary rounded-full flex items-center justify-center mb-4 text-3xl">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <h3 class="font-bold text-dark mb-1">Affordable</h3>
+                        <p class="text-sm text-gray-500">Fair local pricing</p>
+                    </div>
+                    <div>
+                        <div class="h-16 w-16 mx-auto bg-pink-50 text-primary rounded-full flex items-center justify-center mb-4 text-3xl">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3 class="font-bold text-dark mb-1">Flexible Hours</h3>
+                        <p class="text-sm text-gray-500">Morning & Evening slots</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-dark mb-4">How We Can Help You</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">From chronic pain to post-pregnancy care, our clinic offers a wide range of therapies to support your overall wellness.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Services -->
+                <div class="bg-light rounded-[2rem] p-6 text-center border-2 border-transparent hover:border-primary transition group bounce-hover cursor-pointer">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-primary text-3xl mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-bone"></i>
+                    </div>
+                    <h3 class="font-bold text-dark">Joint Pain</h3>
+                </div>
+                <div class="bg-light rounded-[2rem] p-6 text-center border-2 border-transparent hover:border-primary transition group bounce-hover cursor-pointer">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-primary text-3xl mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="font-bold text-dark">Post-Op Rehab</h3>
+                </div>
+                <div class="bg-light rounded-[2rem] p-6 text-center border-2 border-transparent hover:border-primary transition group bounce-hover cursor-pointer">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-primary text-3xl mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="font-bold text-dark">Neuro Rehab</h3>
+                </div>
+                <div class="bg-light rounded-[2rem] p-6 text-center border-2 border-transparent hover:border-primary transition group bounce-hover cursor-pointer">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-primary text-3xl mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-person-falling-burst"></i>
+                    </div>
+                    <h3 class="font-bold text-dark">Sports Injury</h3>
+                </div>
+                <div class="bg-light rounded-[2rem] p-6 text-center border-2 border-transparent hover:border-primary transition group bounce-hover cursor-pointer">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-primary text-3xl mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h3 class="font-bold text-dark">Exercise Therapy</h3>
+                </div>
+                <div class="bg-light rounded-[2rem] p-6 text-center border-2 border-transparent hover:border-primary transition group bounce-hover cursor-pointer">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-primary text-3xl mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-person-breastfeeding"></i>
+                    </div>
+                    <h3 class="font-bold text-dark">Antenatal Care</h3>
+                </div>
+                <div class="bg-light rounded-[2rem] p-6 text-center border-2 border-transparent hover:border-primary transition group bounce-hover cursor-pointer">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-primary text-3xl mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-baby-carriage"></i>
+                    </div>
+                    <h3 class="font-bold text-dark">Lactation</h3>
+                </div>
+                <div class="bg-light rounded-[2rem] p-6 text-center border-2 border-transparent hover:border-primary transition group bounce-hover cursor-pointer">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-primary text-3xl mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-street-view"></i>
+                    </div>
+                    <h3 class="font-bold text-dark">Posture Fix</h3>
+                </div>
+                <div class="bg-light rounded-[2rem] p-6 text-center border-2 border-transparent hover:border-primary transition group bounce-hover cursor-pointer">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-primary text-3xl mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-chair"></i>
+                    </div>
+                    <h3 class="font-bold text-dark">Ergonomics</h3>
+                </div>
+                <div class="bg-light rounded-[2rem] p-6 text-center border-2 border-transparent hover:border-primary transition group bounce-hover cursor-pointer">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-primary text-3xl mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="font-bold text-dark">Muscular Pain</h3>
+                </div>
+            </div>
+
+            <div class="mt-20 p-8 bg-pink-50 rounded-[2rem] border border-pink-100 relative overflow-hidden">
+                <div class="relative z-10 text-center">
+                    <h3 class="text-2xl font-bold text-dark mb-6">Our Advanced Facilities</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-white text-primary px-5 py-2.5 rounded-full font-bold shadow-sm border border-pink-100">I.F.T.</span>
+                        <span class="bg-white text-primary px-5 py-2.5 rounded-full font-bold shadow-sm border border-pink-100">Muscle Stimulation</span>
+                        <span class="bg-white text-primary px-5 py-2.5 rounded-full font-bold shadow-sm border border-pink-100">T.E.N.S.</span>
+                        <span class="bg-white text-primary px-5 py-2.5 rounded-full font-bold shadow-sm border border-pink-100">Laser Therapy</span>
+                        <span class="bg-white text-primary px-5 py-2.5 rounded-full font-bold shadow-sm border border-pink-100">Cervical & Lumbar Traction</span>
+                        <span class="bg-white text-primary px-5 py-2.5 rounded-full font-bold shadow-sm border border-pink-100">Myofascial Release</span>
+                        <span class="bg-white text-primary px-5 py-2.5 rounded-full font-bold shadow-sm border border-pink-100">Kinesio Taping</span>
+                        <span class="bg-white text-primary px-5 py-2.5 rounded-full font-bold shadow-sm border border-pink-100">Dry Needling</span>
+                        <span class="bg-white text-primary px-5 py-2.5 rounded-full font-bold shadow-sm border border-pink-100">Cupping</span>
+                        <span class="bg-white text-primary px-5 py-2.5 rounded-full font-bold shadow-sm border border-pink-100">Ultrasound</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                <div class="lg:col-span-6 order-2 lg:order-1 mt-12 lg:mt-0">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <img src="image 9 temp.PNG" alt="Dr Monika" class="w-full h-64 object-cover rounded-3xl shadow-lg border-4 border-light ml-4">
+                            <img src="image 6 temp.PNG" alt="Clinic Interior" class="w-full h-48 object-cover rounded-3xl shadow-lg border-4 border-light">
+                        </div>
+                        <div class="space-y-4 mt-12">
+                            <img src="image 7 temp.PNG" alt="Patient Care" class="w-full h-48 object-cover rounded-3xl shadow-lg border-4 border-light">
+                            <img src="image 8 temp.PNG" alt="Therapy Session" class="w-full h-64 object-cover rounded-3xl shadow-lg border-4 border-light mr-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 order-1 lg:order-2">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-100 text-primary font-bold text-sm mb-6">
+                        <i class="fa-solid fa-star"></i> Rated 4.8 Stars in Thane
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-extrabold text-dark mb-6">Meet Dr. Monika Sharma</h2>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        Hello! I'm Dr. Monika Sharma, your local physiotherapist in Bhayandarpada, Thane. My clinic is dedicated to delivering high-quality care with a personal touch. We believe that a warm, welcoming environment is just as important as the advanced treatments we provide.
+                    </p>
+                    <p class="text-gray-600 mb-8 text-lg leading-relaxed">
+                        We provide specialized services to patients of all ages—from young athletes recovering from injuries to mothers seeking antenatal care, and seniors needing joint pain relief. Our emphasis on personalized care ensures that every patient receives tailored treatment according to their needs.
+                    </p>
+                    <a href="#contact" class="bg-dark text-white px-8 py-3.5 rounded-full font-bold shadow-lg hover:bg-gray-800 transition inline-block">Come Say Hi!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews" class="py-24 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center text-dark mb-4">Smiles We've Restored</h2>
+            <p class="text-center text-gray-500 mb-16 text-lg max-w-xl mx-auto">Don't just take our word for it. Here's what your neighbors in Thane have to say about our care.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-lg transition">
+                    <div class="flex items-center mb-6">
+                        <img src="https://source.unsplash.com/random/100x100/?woman,smile,2" alt="Patient" class="w-14 h-14 rounded-full border-2 border-primary object-cover">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-dark">Sunita K.</h4>
+                            <div class="flex text-yellow-400 text-sm mt-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 relative">
+                        <i class="fa-solid fa-quote-left text-pink-200 text-4xl absolute -top-4 -left-2 -z-10"></i>
+                        "Dr. Monika's postnatal care program was a lifesaver. Not only is the clinic beautiful and clean, but the care is incredibly genuine. Highly recommended!"
+                    </p>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-lg transition">
+                    <div class="flex items-center mb-6">
+                        <img src="https://source.unsplash.com/random/100x100/?man,smile,2" alt="Patient" class="w-14 h-14 rounded-full border-2 border-primary object-cover">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-dark">Rahul S.</h4>
+                            <div class="flex text-yellow-400 text-sm mt-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 relative">
+                        <i class="fa-solid fa-quote-left text-pink-200 text-4xl absolute -top-4 -left-2 -z-10"></i>
+                        "A fantastic experience from start to finish. The laser therapy for my sports injury worked wonders. They really listen to your problems here."
+                    </p>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-lg transition">
+                    <div class="flex items-center mb-6">
+                        <img src="https://source.unsplash.com/random/100x100/?woman,smile,3" alt="Patient" class="w-14 h-14 rounded-full border-2 border-primary object-cover">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-dark">Priya M.</h4>
+                            <div class="flex text-yellow-400 text-sm mt-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 relative">
+                        <i class="fa-solid fa-quote-left text-pink-200 text-4xl absolute -top-4 -left-2 -z-10"></i>
+                        "Affordable, professional, and very friendly. The postural correction advice has helped me immensely with my work-from-home neck pain."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Large CTA Section -->
+    <section class="py-20 bg-primary blob-bg bg-blend-overlay relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary/90"></div>
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Ready to Feel Better?</h2>
+            <p class="text-pink-100 text-lg md:text-xl mb-10 max-w-2xl mx-auto">We're just a message away. Reach out to schedule your comfortable and personalized consultation today.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="tel:7096706997" class="bg-white text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-gray-50 transition shadow-xl bounce-hover flex items-center justify-center">
+                    <i class="fa-solid fa-phone mr-3 text-xl"></i> Call 7096706997
+                </a>
+                <a href="https://wa.me/917041722379" target="_blank" class="bg-[#25D366] text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-[#20b858] transition shadow-xl bounce-hover flex items-center justify-center">
+                    <i class="fa-brands fa-whatsapp mr-3 text-xl"></i> WhatsApp 7041722379
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-pink-50">
+                <div class="grid lg:grid-cols-2">
+                    <!-- Contact Form -->
+                    <div class="p-10 lg:p-16">
+                        <h2 class="text-3xl font-extrabold text-dark mb-2">Drop us a line</h2>
+                        <p class="text-gray-500 mb-8">Fill out the form below and we'll reply as soon as possible.</p>
+                        
+                        <form class="space-y-5">
+                            <div>
+                                <input type="text" placeholder="Your Name" class="w-full px-5 py-4 rounded-xl bg-pink-50 border-none focus:ring-2 focus:ring-primary text-gray-700 outline-none">
+                            </div>
+                            <div>
+                                <input type="tel" placeholder="Your Phone Number" class="w-full px-5 py-4 rounded-xl bg-pink-50 border-none focus:ring-2 focus:ring-primary text-gray-700 outline-none">
+                            </div>
+                            <div>
+                                <textarea rows="4" placeholder="How can we help you?" class="w-full px-5 py-4 rounded-xl bg-pink-50 border-none focus:ring-2 focus:ring-primary text-gray-700 outline-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-dark text-white font-bold py-4 rounded-xl hover:bg-gray-800 transition shadow-lg mt-2 bounce-hover">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Info & Map -->
+                    <div class="bg-light p-10 lg:p-16 flex flex-col justify-between relative">
+                        <div>
+                            <h3 class="text-2xl font-bold text-dark mb-6">Clinic Information</h3>
+                            <ul class="space-y-6">
+                                <li class="flex items-start">
+                                    <div class="bg-white p-3 rounded-full text-primary shadow-sm mr-4 mt-1"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div>
+                                        <h4 class="font-bold text-dark">Address</h4>
+                                        <p class="text-gray-600 text-sm mt-1">2002 vida TenX Habitat, Pokharan Road No. 1,<br>Phase 1, J K Gram, Thane West, MH 400606</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="bg-white p-3 rounded-full text-primary shadow-sm mr-4 mt-1"><i class="fa-solid fa-clock"></i></div>
+                                    <div>
+                                        <h4 class="font-bold text-dark">Hours</h4>
+                                        <p class="text-gray-600 text-sm mt-1">Morning: 7:00 am - 9:00 am<br>Evening: 2:00 pm - 9:00 pm<br><span class="text-primary font-medium">Closed on Tuesdays</span></p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="bg-white p-3 rounded-full text-primary shadow-sm mr-4 mt-1"><i class="fa-solid fa-phone"></i></div>
+                                    <div>
+                                        <h4 class="font-bold text-dark">Contact</h4>
+                                        <p class="text-gray-600 text-sm mt-1">7096706997<br>7041722379</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-8 rounded-2xl overflow-hidden shadow-lg h-48 w-full">
+                            <iframe 
+                                title="Map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d3768.647385202685!2d72.9649!3d19.2104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEyJzM3LjQiTiA3MsKwNTcnNTMuNiJF!5e0!3m2!1sen!2sin!4v1630000000000!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white pt-12 pb-8 border-t border-pink-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left mb-8">
+                <div class="mb-6 md:mb-0">
+                    <img src="logo 2.PNG" alt="Dr. Monika's Physiotherapy Logo" class="h-12 w-auto object-contain mx-auto md:mx-0 mb-4 opacity-80 style="filter: grayscale(100%);"">
+                    <p class="text-gray-500 max-w-sm">Compassionate physiotherapy care in Thane. Healing hands, caring hearts.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="h-12 w-12 bg-pink-50 text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition bounce-hover text-xl">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="h-12 w-12 bg-pink-50 text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition bounce-hover text-xl">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-pink-50 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2024 Dr. Monika's Physiotherapy. Crafted with care.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-primary transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-primary transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
